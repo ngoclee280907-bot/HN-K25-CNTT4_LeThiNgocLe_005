@@ -66,7 +66,7 @@ values (1, 'E001', 'P001', 'Developer', 150),
 
 update Department
 set location = 'Floor 10'
-where dept_id = 'D001';
+where dept_id = 'D01';
 
 update Project
 set budget = budget * 1.1,
