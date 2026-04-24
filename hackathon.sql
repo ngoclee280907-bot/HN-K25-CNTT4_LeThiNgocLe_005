@@ -107,6 +107,10 @@ select d.dept_id, d.dept_name, e.emp_name
 from Department d
 left join Employee e on d.dept_id = e.dept_id;
 
+select p.project_name, SUM(a.hours_worked) as Total_Hours
+from Project p
+join Assignment a on p.project_id = a.project_id
+group by p.project_name;
 
 
 
